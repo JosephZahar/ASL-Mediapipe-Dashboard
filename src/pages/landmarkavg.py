@@ -29,17 +29,18 @@ def visualmean_dash(sequence_id):
 
     return fig, sign_cat
 
-fig, sign_cat = visualmean_dash(36032215)
+fig, sign_cat = visualmean_dash(3127189)
 
 
 sign_dropdown = dcc.Dropdown(options=[{'label':name, 'value':name} for name in names],
                              id='sign_dropdown',
                              clearable=False,
-                             value = names[0], className="dbc",
+                             value = 'eye', className="dbc",
                              placeholder='Select a Sign', maxHeight=200)
 
 sequence_dropdown = dcc.Dropdown(id='sequence_dropdown',
                                  clearable=False,
+                                 value = 3127189,
                                  className="dbc",
                                  placeholder='Select a Sequence ID', maxHeight=200)
 
@@ -53,3 +54,4 @@ layout = dbc.Container(
                   html.Hr()
               ], width={'size': 12, 'offset': 0, 'order': 1})])]
 )
+
