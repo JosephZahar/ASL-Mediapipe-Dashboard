@@ -2,9 +2,9 @@ import pathlib
 from dash import html, dcc
 from dash.dependencies import Input, Output
 from src.pages import landmarkavg
-from pages import landmark2d
-from pages.landmark2d import visual_dash
-from pages.landmarkavg import visualmean_dash
+from src.pages import landmark2d
+from src.pages.landmark2d import visual_dash
+from src.pages.landmarkavg import visualmean_dash
 from components import navbar
 import dash
 import dash_bootstrap_components as dbc
