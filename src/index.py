@@ -5,7 +5,7 @@ from src.pages import landmarkavg
 from src.pages import landmark2d
 from src.pages.landmark2d import visual_dash
 from src.pages.landmarkavg import visualmean_dash
-from components import navbar
+from src.components import navbar
 import dash
 import dash_bootstrap_components as dbc
 import pandas as pd
