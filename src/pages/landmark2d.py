@@ -43,8 +43,8 @@ sequence_dropdown = dcc.Dropdown(id='sequence_dropdown',
                                placeholder='Select a Sequence ID', maxHeight=200)
 
 layout = dbc.Container(
-    [dbc.Row([dbc.Col(sequence_dropdown),
-              dbc.Col(sign_dropdown),]),
+    [dbc.Row([dbc.Col(sign_dropdown),
+              dbc.Col(sequence_dropdown),]),
      dbc.Row([html.H1(id='sign_cat'),
          dbc.Col([
              dcc.Graph(id='fig', figure=fig,
