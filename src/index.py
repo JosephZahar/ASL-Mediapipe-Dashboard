@@ -20,7 +20,7 @@ nestedOptions = dropdown_options[names[0]]
 
 nav = navbar.Navbar()
 
-app = dash.Dash(__name__,meta_tags=[{"name": "viewport", "content": "width=device-width"}],
+app = dash.Dash(__name__,meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=0.5"}],
                 external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 server = app.server
 
